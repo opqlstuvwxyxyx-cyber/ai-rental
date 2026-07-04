@@ -1,0 +1,62 @@
+[
+  {
+    "id": "demo-001",
+    "title": "スキンケアルーティン紹介",
+    "description": "自然光の中で撮影したUGC風の縦型動画。SNS広告に最適です。",
+    "category": "美容・コスメ",
+    "tags": ["美容・コスメ", "縦型", "UGC"],
+    "duration": 30,
+    "videoUrl": "/videos/sample-1.mp4",
+    "thumbnailUrl": "/videos/thumbs/sample-1.jpg",
+    "aspectRatio": "9:16",
+    "createdAt": "2026-06-25"
+  },
+  {
+    "id": "demo-002",
+    "title": "朝のコーヒータイム",
+    "description": "リビングでのカジュアルな雰囲気。親しみやすいトーンで訴求できます。",
+    "category": "食品・飲料",
+    "tags": ["食品・飲料", "縦型", "UGC"],
+    "duration": 25,
+    "videoUrl": "/videos/sample-2.mp4",
+    "thumbnailUrl": "/videos/thumbs/sample-2.jpg",
+    "aspectRatio": "9:16",
+    "createdAt": "2026-06-25"
+  },
+  {
+    "id": "demo-003",
+    "title": "新作バッグ開封",
+    "description": "アンボクシング風の演出。商品の魅力を自然に伝えます。",
+    "category": "ファッション",
+    "tags": ["ファッション", "縦型", "UGC"],
+    "duration": 20,
+    "videoUrl": "/videos/sample-3.mp4",
+    "thumbnailUrl": "/videos/thumbs/sample-3.jpg",
+    "aspectRatio": "9:16",
+    "createdAt": "2026-06-25"
+  },
+  {
+    "id": "demo-004",
+    "title": "週末のカフェ巡り",
+    "description": "日常シーンを切り取った素材。共感を呼ぶコンテンツに。",
+    "category": "ライフスタイル",
+    "tags": ["ライフスタイル", "縦型", "UGC"],
+    "duration": 35,
+    "videoUrl": "/videos/sample-4.mp4",
+    "thumbnailUrl": "/videos/thumbs/sample-4.jpg",
+    "aspectRatio": "9:16",
+    "createdAt": "2026-06-25"
+  },
+  {
+    "id": "demo-005",
+    "title": "旅行Vlog - 沖縄編",
+    "description": "旅行・レジャー系の広告に。臨場感のある映像表現。",
+    "category": "Vlog",
+    "tags": ["Vlog", "縦型", "UGC"],
+    "duration": 40,
+    "videoUrl": "/videos/sample-5.mp4",
+    "thumbnailUrl": "/videos/thumbs/sample-5.jpg",
+    "aspectRatio": "9:16",
+    "createdAt": "2026-06-25"
+  }
+]
