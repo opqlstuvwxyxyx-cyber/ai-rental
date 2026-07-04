@@ -13,17 +13,35 @@ export default function LoginPage() {
   const router = useRouter();
 
   return (
-    <div className="flex min-h-[70vh] items-center justify-center px-4">
-      <div className="glass-card w-full max-w-md p-10">
-        <h1 className="font-display mb-2 text-center text-2xl text-cream">ログイン</h1>
-        <p className="mb-6 text-center text-xs text-muted">デモ: demo@airental.jp / demo1234</p>
-        <form onSubmit={(e) => { e.preventDefault(); const r = login(email, password); if (r.ok) router.push("/materials"); else setError(r.error ?? "エラー"); }} className="space-y-4">
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="input-field" placeholder="email@example.com" required />
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input-field" placeholder="パスワード" required />
-          {error && <p className="text-xs text-red-400">{error}</p>}
+    <div className="flex min-h-[70vh] items-center justify-center px-4 py-12">
+      <div className="glass-card w-full max-w-md p-8 sm:p-10">
+        <div className="mb-8 text-center">
+          <p className="label-caps mb-2">Welcome back</p>
+          <h1 className="font-display text-2xl text-cream">ログイン</h1>
+        </div>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            const r = login(email, password);
+            if (r.ok) router.push("/materials");
+            else setError(r.error ?? "ログインに失敗しました");
+          }}
+          className="space-y-4"
+        >
+          <div>
+            <label htmlFor="email" className="mb-1.5 block text-xs text-muted">メールアドレス</label>
+            <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="input-field" autoComplete="email" required />
+          </div>
+          <div>
+            <label htmlFor="password" className="mb-1.5 block text-xs text-muted">パスワード</label>
+            <input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input-field" autoComplete="current-password" required />
+          </div>
+          {error && <p className="text-xs text-red-400" role="alert">{error}</p>}
           <button type="submit" className="btn-primary w-full">ログイン</button>
         </form>
-        <p className="mt-6 text-center text-sm text-muted"><Link href="/auth/register" className="text-gold">新規登録</Link></p>
+        <p className="mt-6 text-center text-sm text-muted">
+          アカウントをお持ちでない方は <Link href="/auth/register" className="text-gold hover:underline">新規登録</Link>
+        </p>
       </div>
     </div>
   );

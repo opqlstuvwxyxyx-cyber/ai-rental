@@ -223,14 +223,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     updateName, updatePassword, changePlan, setEmailNotifications,
   ]);
 
-  if (!hydrated) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-surface">
-        <div className="h-8 w-8 animate-spin rounded-full border-2 border-gold border-t-transparent" />
-      </div>
-    );
-  }
-
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
 
